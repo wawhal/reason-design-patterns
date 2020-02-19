@@ -25,7 +25,7 @@ when calling `User.make`:
 let me: option(User.t) = User.make(~name="leandro", ~age=27);
 
 switch(me) {
-| Some(user) => me.name /** nope! this doesn't work */
+| Some(user) => user.name /** nope! this doesn't work */
 | None => /** no user here! */
 };
 ```
